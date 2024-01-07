@@ -20,7 +20,7 @@ function App() {
           <div className="flex items-center justify-between gap-3">
             <div className="">Made with &hearts; <a href="https://github.com/shrutsureja" className="underline text-blue-400">Shrut Sureja</a></div>
             <a href="https://github.com/shrutsureja/custom-password-generator" target="_blank" rel="noreferrer">
-              <img src="./public/github-mark/github-mark.png" className="w-8"/>
+              <img src="../github-mark/github-mark.png" className="w-8"/>
             </a>
           </div>
         </div>
