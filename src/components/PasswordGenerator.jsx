@@ -54,10 +54,6 @@ function PasswordGenerator({setGeneratedPassword}) {
                 <input className="mr-2 border-2 h-full w-auto" type="checkbox" id="numbers" checked={includeNumbers} onChange={()=>{setNumbers(!includeNumbers)}}/>
                 <label className="text-md font-normal">Numbers</label>
             </div>
-            <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-600">Keywords (comma seperated):</label>
-                <input className="border-2 border-gray-300 w-full rounded-md p-2" type="text"/>
-            </div>
             <div className="flex justify-center">
                 <button className="bg-blue-600 text-white rounded-md p-3" onClick={generateNewPassword}>Generate Password</button>
             </div>
