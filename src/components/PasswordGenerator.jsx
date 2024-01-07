@@ -57,6 +57,7 @@ function PasswordGenerator({setGeneratedPassword}) {
             <div className="flex justify-center">
                 <button className="bg-blue-600 text-white rounded-md p-3" onClick={generateNewPassword}>Generate Password</button>
             </div>
+            <div className="mt-7 text-sm text-red-400">More Features comming soon!!</div>
         </>
     );
 }
