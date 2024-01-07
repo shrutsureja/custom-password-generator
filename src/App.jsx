@@ -1,20 +1,26 @@
-
 import PasswordDisplay from "./components/PasswordDisplay"
 import PasswordGenerator from "./components/PasswordGenerator"
-// import { useState } from "react"
+import { useState } from "react"
+// import { useEffect } from "react"
 import './App.css'
 
 function App() {
-  // const [generatedPassword, setGeneratedPassword] = useState('');
+  const [generatedPassword, setGeneratedPassword] = useState('');
+  // setGeneratedPassword("shrut");
+  // useEffect(()=>{
+  //   setGeneratedPassword("Shrasdat");
+  //   alert("in the useEffect: " + generatedPassword.length);
+  //   console.log("Generated Password: "+ generatedPassword)
+  // },[generatedPassword]);
   return (
     <>
-    shrutsureja
       <div className="bg-gray-200 h-screen w-screen flex justify-center items-center">
         <div className="bg-white rounded-md max-w-md w-full shadow-md p-8">
           <h1 className="text-center font-mono font-[600] text-xl mb-8">Custom Password Generator</h1>
-            <PasswordDisplay/>
-          <div className="mb-4"></div>
-          <PasswordGenerator/>
+            <p>{generatedPassword}</p>
+            <PasswordDisplay passsword={generatedPassword}/>
+            <div className="mb-4"></div>
+            <PasswordGenerator setGeneratedPassword={setGeneratedPassword}/>
         </div>
       </div>
     </>
