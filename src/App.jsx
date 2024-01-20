@@ -1,6 +1,9 @@
 import PasswordDisplay from "./components/PasswordDisplay"
 import PasswordGenerator from "./components/PasswordGenerator"
 import { useState } from "react"
+// import { SpeedInsights } from '@vercel/speed-insights'
+import { injectSpeedInsights } from '@vercel/speed-insights';
+injectSpeedInsights();
 // import { useEffect } from "react"
 import './App.css'
 
@@ -31,6 +34,7 @@ function App() {
             <PasswordGenerator setGeneratedPassword={setGeneratedPassword}/>
         </div>
       </div>
+        {/* <SpeedInsights/> */}
     </>
   )
 }
